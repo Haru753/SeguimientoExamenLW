@@ -1,7 +1,7 @@
 @extends('pagPlantilla')
 
 @section('titulo')
-  <center><h1 class="display-4">Ingresar:</h1><center>
+  <center><h1 class="display-4" style="font-weight:bolder">Ingresar:</h1><center>
 @endsection
 
 @section('seccion')
@@ -40,11 +40,11 @@
     <option value="0">Inactivo</option>
     <option value="1">Activo</option>   
   </select>
-  <button class="btn btn-primary" type="submit">Agregar</button>
+  <button class="btn btn-primary" type="submit" style="font-weight:bolder">Agregar</button>
   </form>
 
   <hr>
-  <center><h3>Lista de Alumnos</h3></center>
+  <center><h3 style="color:#ff2d00; font-weight:bolder">Lista de Alumnos</h3></center>
         <table class="table">
         <thead class="table-dark">
             <tr>
