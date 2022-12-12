@@ -15,13 +15,13 @@
 <form action="{{ route('Seguimiento.xSegUpdate', $xActSegAlumnos->id)}}" method="post" class="d-grid pag-2">
    @method('PUT')
    @csrf
-   @error('codEst')
+   @error('idSeg')
       <div class="alert alert-danger">
            El codigo es requerido
       </div>
    @enderror
 
-  <p>Codigo Seguimiento: </p><input type="text" name="idSeg" placeholder="Código Seguimiento" value="{{ $xActSegAlumnos->idSeg }}" class="form-control mb-2"> 
+  <p>Codigo Seguimiento: </p><input type="text" name="idSeg" placeholder="Codigo Seguimiento" value="{{ $xActSegAlumnos->idSeg }}" class="form-control mb-2"> 
   <p>Codigo Estudiante: </p><input type="text" name="idEst" placeholder="Codigo Estudiante" value="{{ $xActSegAlumnos->idEst}}" class="form-control mb-2">
  
   <p>Trabajo Actual </p><select name="traAct" class="form-control mb-2">
@@ -35,10 +35,10 @@
 
   <p>Satisfaccion Estudiantil </p><select name="satEst" class="form-control mb-2">
       <option value="">Seleccione</option>
-      <option value="0"@if ($xActSegAlumnos->traAct == 0) {{ "SELECTED" }} @endif) >0 (0)</option>
-      <option value="1"@if ($xActSegAlumnos->traAct == 1) {{ "SELECTED" }} @endif) >1 (1)</option>
-      <option value="2"@if ($xActSegAlumnos->traAct == 2) {{ "SELECTED" }} @endif) >2 (2)</option>
-      <option value="3"@if ($xActSegAlumnos->traAct == 3) {{ "SELECTED" }} @endif) >3 (3)</option>
+      <option value="0"@if ($xActSegAlumnos->traAct == 0) {{ "SELECTED" }} @endif) >0 (Nada Satisfecho)</option>
+      <option value="1"@if ($xActSegAlumnos->traAct == 1) {{ "SELECTED" }} @endif) >1 (Poco Satisfecho)</option>
+      <option value="2"@if ($xActSegAlumnos->traAct == 2) {{ "SELECTED" }} @endif) >2 (Satisfecho)</option>
+      <option value="3"@if ($xActSegAlumnos->traAct == 3) {{ "SELECTED" }} @endif) >3 (Muy satisfecho)</option>
      
   </select>
 

@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('seguimientos', function (Blueprint $table) {
             $table->id();
-            $table->string('idSeg',);
-            $table->string('idEst',);
+            $table->integer('idSeg',);
+            $table->integer('idEst',);
             $table->string('traAct',);
             $table->string('ofiAct');
             $table->integer('satEst');

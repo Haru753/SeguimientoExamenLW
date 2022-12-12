@@ -82,7 +82,7 @@ class PagesController extends Controller
             $xUpdateSegAlumnos->idEst = $request->idEst;
             $xUpdateSegAlumnos->traAct = $request->traAct;
             $xUpdateSegAlumnos->ofiAct = $request->ofiAct;
-            $xUpdateSegAlumnos->satEst= $request->satEst;
+            $xUpdateSegAlumnos->satEst = $request->satEst;
             $xUpdateSegAlumnos->fecSeg = $request->fecSeg;
             $xUpdateSegAlumnos->estSeg = $request->estSeg;
     
@@ -147,7 +147,7 @@ class PagesController extends Controller
         $nuevoSeguimiento->idEst = $request->idEst;
         $nuevoSeguimiento->traAct = $request->traAct;
         $nuevoSeguimiento->ofiAct = $request->ofiAct;
-        $nuevoSeguimiento->satEst= $request->satEst;
+        $nuevoSeguimiento->satEst = $request->satEst;
         $nuevoSeguimiento->fecSeg = $request->fecSeg;
         $nuevoSeguimiento->estSeg = $request->estSeg;
 

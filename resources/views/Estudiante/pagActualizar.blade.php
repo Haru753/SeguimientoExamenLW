@@ -20,6 +20,7 @@
            El codigo es requerido
       </div>
    @enderror
+   
 
   <p>Codigo: </p><input type="text" name="codEst" placeholder="Código" value="{{ $xActAlumnos->codEst }}" class="form-control mb-2"> 
   <p>Nombres: </p><input type="text" name="nomEst" placeholder="Nombres" value="{{ $xActAlumnos->nomEst}}" class="form-control mb-2">
