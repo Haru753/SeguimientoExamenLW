@@ -32,6 +32,23 @@ Route::get('/galeria/{numero?}', [PagesController::class,'fnGaleria'])->where('i
 
 Route::get('/lista', [PagesController::class,'fnLista'])->name('xLista') ;
 
+
+
+
+Route::post('/', [PagesController::class,'fnSegRegistrar'])->name('Seguimiento.xSegRegistrar');
+
+Route::put('/actualizar/{id}', [PagesController::class,'fnSegUpdate'])->name('Seguimiento.xSegUpdate');
+
+Route::get('/actualizar/{id}', [PagesController::class,'fnSegActualizar'])->name('Seguimiento.xSegActualizar') ;
+
+Route::delete('/eliminar/{id}', [PagesController::class,'fnSegEliminar'])->name('Seguimiento.xSegEliminar') ;
+
+Route::get('/detalle/{id}', [PagesController::class,'fnSegDetalle'])->name('Seguimiento.xSegDetalle') ;
+
+Route::get('/Seguimiento', [PagesController::class,'fnSeguimiento'])->name('xSeguimiento') ;
+
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
